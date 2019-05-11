@@ -1,0 +1,184 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+h1, h2, h3, p, a {
+    font-family: 'Comfortaa', cursive;
+    font-weight: lighter;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    color: #EF3155;
+}
+
+h1 img {
+    width: 27px !important;
+}
+
+.red {
+    background-color: #EF3155;
+    color: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    max-width: 800px;
+    border-bottom: 1px solid #ccc;
+    font-size: 10px;
+}
+
+header a:first-of-type {
+    display: none;
+}
+
+header a:nth-of-type(2) {
+    flex: 1;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+p.red {
+    border-radius: 10px;
+    padding: 2px 8px;
+    margin: 0;
+}
+
+a {
+    font-size: 10px;
+    margin: 0 10px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: #666;
+}
+
+.fullscreenlaptop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #fff 0%,#ddd 68%,#fff 83%,#fff 100%);
+    overflow: hidden;
+}
+
+#macbook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/macbook.svg);
+    height: 70vh;
+    width: 70vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: scalein 1200ms;
+}
+
+#macbook #screen {
+    background-image: url(../img/screen.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45vh;
+    width: 35vw;
+    animation: scaleout 1200ms;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.nodrag {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+@keyframes scalein {
+    from {
+        transform: translateY(60px);
+        transform: scale(0.95);
+    }
+    to {
+        transform: translateY(0);
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleout {
+    from {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleY {
+    from {
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        opacity: 1;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        transition: height 200ms;
+        flex-direction: column;
+        height: 35px;
+        overflow: hidden;
+    }
+
+    header a {
+        overflow: hidden;
+        width: 100%;
+        justify-content: center !important;
+        text-align: center;
+        transition: 200ms background-color;
+    }
+
+    header a:first-of-type {
+        display: flex;
+    }
+
+    header p.red {
+        background-color: rgba(255, 255, 255, 0);
+        color: #666;
+    }
+
+    header a:hover {
+        background-color: rgba( 0, 0, 0, 0.01);
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #macbook {
+        height: auto !important;
+    }
+}

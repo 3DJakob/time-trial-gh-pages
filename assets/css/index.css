@@ -1,0 +1,12 @@
+.home {
+    height: calc(100vh - 38px);
+    padding-top: 38px;
+}
+
+.home h1 {
+    margin: 5px 20px;
+}
+
+.home p {
+    margin: 5px 20px;
+}

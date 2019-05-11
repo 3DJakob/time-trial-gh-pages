@@ -1,0 +1,191 @@
+.rounded {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9F9F9;
+    border-radius: 30px;
+    max-width: 80vw;
+    padding: 30px;
+    margin: 40px;
+}
+
+.rounded .text {
+    max-width: 400px;
+}
+
+.rounded img {
+    width: 50vw;
+}
+
+.darkmode {
+    width: 100vw !important;
+    max-width: calc(100vw - 20px);
+    background-color: #192741;
+    border-radius: 0;
+    padding: 80px 10px;
+    margin: 0;
+}
+
+.darkmode h1, .darkmode p {
+    color: #fff;
+}
+
+.moon, .star {
+    width: 100px !important;
+    position: absolute;
+    top: -30px;
+    left: -2%;
+}
+
+.darkmode .darkmode-computer {
+    position: relative;
+}
+
+.darkmode .darkmode-computer .screen-slider {
+    position: absolute;
+    top: 7%;
+    bottom: 14%;
+    left: 12%;
+    right: 12%;
+    overflow: hidden;
+}
+
+.darkmode .darkmode-computer .screen-slider .slider {
+    z-index: 2;
+    position: relative;
+    height: 100%;
+    background-image: url('../img/darkmode-dark.png');
+    background-size: cover;
+    border-right: 2px solid #fff;
+
+    transition: 0;
+    width: 50%; /*  Amount shown! */
+}
+
+.darkmode .darkmode-computer .screen-slider .slider a {
+    position: absolute;
+    clear: both;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 100%;
+    left: calc(100% - 9px);
+    top: calc(50% - 10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    cursor: ew-resize;
+    transition: 200ms;
+}
+
+.darkmode .darkmode-computer .screen-slider .slider a:hover {
+    background-color: #EF3155 !important;
+}
+
+.darkmode .darkmode-computer .screen-slider :last-child {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .rounded {
+        flex-direction: column;
+    }
+
+    .rounded .text {
+        width: auto;
+    }
+
+    .rounded img {
+        width: 100%;
+    }
+}
+
+.divided {
+    width: 100vw;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+}
+
+.divided div:first-child div {
+    margin-right: 20px;
+}
+
+.divided div:last-child div {
+    margin-left: 20px;
+}
+
+.divided div {
+    width: 50%;
+    align-items: center;
+}
+
+.divided div .rounded {
+    width: auto;
+    flex-direction: column;
+}
+
+.divided div .rounded #achievements {
+    display: flex;
+    justify-content: center;
+    height: 180px;
+}
+
+.divided div .rounded #achievements * {
+    width: 100px;
+    position: absolute;
+}
+
+.divided div .rounded div.img, .divided div .rounded div.img img {
+    width: 100%;
+}
+
+
+.divided div .rounded div.img.cloud {
+    width: 70%;
+}
+
+.divided div .rounded div.img.pdf {
+    height: 200px;
+}
+
+@media only screen and (max-width: 500px) {
+    .divided {
+        flex-direction: column;
+    }
+
+    .divided div {
+        width: 100vw;
+    }
+
+    .divided div div {
+        margin: 20px;
+    }
+}
+
+.download p {
+    font-size: 10px;
+}
+
+.download p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#platforms {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    max-width: 200px;
+    justify-content: space-evenly;
+    margin: 0;
+    color: #999;
+    font-size: 40px;
+}

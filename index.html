@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Time Trial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/inserts.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#ef3155">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ef3155">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ef3155">
+</head>
+<body onload="init()">
+    <div class="home fullscreenlaptop">
+        <header>
+            <a onclick="toggleHeader()"><i class="fas fa-bars"></i></a>
+            <a href="/">Time Trial</a>
+            <a href="#sleekDesign" class="smooth-scroll">Overview</a>
+            <a href=""> <p class="red">Coming soon!</p></a>
+            <!-- <a href=""> <p class="red">Download now </p></a> -->
+        </header>
+        <h1>Welcome to Time Trial</h1>
+        <p>The perfect companion when working hourly.</p>
+        <div id="macbook">
+            <div id="screen"></div>
+        </div>
+    </div>
+    <div class="rounded" id="sleekDesign" data-aos="fade-right" data-aos-duration="1000">
+        <div class="text">
+            <h1>Sleek design</h1>
+            <p>Time Trial offers a sleek interface and makes it easy for you to stay organized and updated about your ongoing and completed projects at a glance.</p>
+        </div>
+        <img src="./assets/img/design.png" alt="">
+    </div>
+    <div class="rounded" data-aos="fade-left" data-aos-duration="1000">
+        <img src="./assets/img/statistics.png" alt="">
+        <div class="text">
+            <h1>Advanced statistics</h1>
+            <p>With advanced statistics, you will easily get an overview on your all total income. Easily observe your monthly income and be motivated to work more the next month.</p>
+        </div>
+    </div>
+    <div class="rounded darkmode">
+        <div class="text">
+            <h1>Work at any hour <img src="./assets/img/icons/darkmode.svg" alt="darkmode"></h1>
+            <p>Time Trial features a complete dark mode for all of you night owls.</p>
+        </div>
+        <div style="position: relative;">
+            <img src="./assets/img/icons/moon.svg" data-aos="fade-up" data-aos-duration="1000" class="moon nodrag" alt="moon">
+            <!-- <img src="./assets/img/icons/star.svg" class="star" alt="star"> -->
+            <div id="stars"></div>
+
+            <!-- <img data-aos="fade-left" data-aos-duration="1000" src="./assets/img/darkmode-computer.png" alt=""> -->
+            <div class="darkmode-computer nodrag" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./assets/img/darkmode-computer.png" class="computer nodrag" alt="">
+                <div class="screen-slider nodrag">
+                    <div class="slider nodrag" data-aos="" data-aos-id="slider">
+                        <a></a>
+                    </div>
+                    <img src="./assets/img/darkmode-light.png" class="screen nodrag" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divided">
+        <div>
+            <div class="rounded column" data-aos="fade-up" data-aos-duration="1000">
+                <div id="platforms">
+                    <i class="fab fa-linux"></i>
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-windows"></i>
+                </div>
+                <h1>Cross platform support</h1>
+                <p>Time Trial is a cross platform app. It's available for Mac OS, Windows and Linux.</p>
+            </div>
+            <div class="rounded" data-aos="fade-up" data-aos-duration="1000">
+                <div id="achievements"></div>
+                <h1>Motivating achievements</h1>
+                <p>Get motivated to work more by achieving all fun and unique Time Trial-achievements!</p>
+            </div>
+            <div class="rounded" data-aos="fade-up" data-aos-duration="1000">
+                <h1>Recurring entries</h1>
+                <p>Save time and let the Time Trial do the job for you.</p>
+                <div class="img">
+                    <img src="./assets/img/recurring.png" alt="">
+                </div>
+                <!-- <img src="./assets/img/recurring.png" alt=""> -->
+            </div>
+        </div>
+        <div>
+            <div class="rounded" data-aos="fade-up" data-aos-duration="1000">
+                <div class="img cloud">
+                    <img src="./assets/img/icons/cloud.svg" alt="cloud">
+                </div>
+                <h1>Cloud sync</h1>
+                <p>Use iCloud Drive or other cloud service for cloud sync across your devices.</p>
+            </div>
+            <div class="rounded" data-aos="fade-up" data-aos-duration="1000">
+                <div class="img pdf">
+                    <img src="./assets/img/pdf-transparent.svg" alt="">
+                </div>
+                <h1>PDF Export</h1>
+                <p>Easily export a PDF to let your employer know what you're doing.</p>
+            </div>
+        </div>
+    </div>
+    <div class="fullscreenlaptop">
+        <h1>What are you waiting for?</h1>
+        <div id="macbook" data-aos="fade-up" data-aos-duration="1000">
+            <div id="screen" data-aos="zoom-out" data-aos-duration="1000"></div>
+        </div>
+        <div class="download">
+            <a href=""> <p class="red">Coming soon!</p></a>
+            <!-- <a href=""> <p class="red">Download now </p></a> -->
+            <p>Not using mac?</p>
+            <p><a>Windows</a> | <a>Ubuntu</a></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
+
