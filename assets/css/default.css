@@ -22,6 +22,9 @@ h1 img {
 
 .no-overflow {
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .red {
