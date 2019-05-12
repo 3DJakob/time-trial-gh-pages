@@ -21,6 +21,7 @@
     width: 100vw !important;
     max-width: calc(100vw - 20px);
     background-color: #192741;
+    background: linear-gradient(#495274, #0E1C36);
     border-radius: 0;
     padding: 80px 10px;
     margin: 0;
