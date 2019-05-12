@@ -20,6 +20,10 @@ h1 img {
     width: 27px !important;
 }
 
+.no-overflow {
+    overflow: hidden;
+}
+
 .red {
     background-color: #EF3155;
     color: #fff;
@@ -151,6 +155,7 @@ a {
         flex-direction: column;
         height: 35px;
         overflow: hidden;
+        background-color: #fff;
     }
 
     header a {
